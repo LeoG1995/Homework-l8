@@ -18,6 +18,9 @@ ul li ul{
 ul li:hover ul{
 	display: block;
 }
+ul li:hover ul li ul{
+	display: none;
+}
 li {
 	list-style: none;
 	height: 50px;
@@ -28,6 +31,7 @@ li {
 	/*background-color: #c2c2c2;*/
 	background-color: #000;
 	border: 1px solid white;
+	position: relative;
 }
 a{
 	color: #fff;
@@ -35,8 +39,15 @@ a{
 	text-decoration: none;
 }
 
-
-
+ul li ul li ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100px;
+}
+ul li ul li:hover ul{
+	display: block;
+}
 
 
 
